@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* clearfix　回りこみ解除 */
+.cfx:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 左寄せ */
+.flL{
+	float: left;
+}
+/* 右寄せ */
+.flR{
+	float:right;
+}
+/* 文字左寄せ */
+.txL{
+	text-align: left;
+}
+/* 文字中央寄せ */
+.txC{
+	text-align: center;
+}
+/* 文字右寄せ */
+.txR{
+	text-align: right;
+}
+
+body{
+	background-image: url(../images/bg.png);
+	font-size: 12px;
+	font-family: メイリオ;
+
+}
+
+/***** ヘッダー要素 *****/
+header{
+	width: auto;
+	height: 70px;
+}
+
+#header_top{
+	width: 960px;
+	height: 70px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header_top h1{
+	padding: 7px 0;
+}
+
+/* フォントサイズ変更 */
+#fontSizeController{
+	width: 135px;
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+
+#fontSizeController p{
+	margin-right: 5px;
+	padding:0;
+	float: left;
+	font-size: 13px;
+	font-weight: 900;
+}
+
+#fontSizeController ul li{
+	width: 20px;
+	height: 20px;
+	float: left;
+	text-indent: -9999px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+#fontSizeController ul li#font_small{
+	background: url(../images/font_small.png);
+}
+#fontSizeController ul li#font_medium{
+	background: url(../images/font_middle.png);
+}
+#fontSizeController ul li#font_big{
+	background: url(../images/font_large.png);
+}
+
+/* サイトマップ・質問 */
+#Menu ul{
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+#Menu ul li{
+	display: inline;
+	float: left;
+}
+
+#Menu ul li a:hover{
+	opacity: 0.5;
+}
+
+/***** ナビ要素 *****/
+nav{
+	width: auto;
+	height: 70px;
+	margin: 0 auto;
+	background-image: url(../images/nav_min1.png);
+}
+
+nav ul{
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	display: block;
+	width: 160px;
+	height: 70px;
+}
+
+nav ul li a.nav_1{
+	background-image: url(../images/nav1.png);
+}
+nav ul li a.nav_1:hover{
+	background-image: url(../images/nav1hover.png);
+}
+nav ul li a.nav_2{
+	background-image: url(../images/nav2.png);
+}
+nav ul li a.nav_2:hover{
+	background-image: url(../images/nav2hover.png);
+}
+nav ul li a.nav_3{
+	background-image: url(../images/nav3.png);
+}
+nav ul li a.nav_3:hover{
+	background-image: url(../images/nav3hover.png);
+}
+nav ul li a.nav_4{
+	background-image: url(../images/nav4.png);
+}
+nav ul li a.nav_4:hover{
+	background-image: url(../images/nav4hover.png);
+}
+nav ul li a.nav_5{
+	background-image: url(../images/nav5.png);
+}
+nav ul li a.nav_5:hover{
+	background-image: url(../images/nav5hover.png);
+}
+nav ul li a.nav_6{
+	background-image: url(../images/nav6.png);
+}
+nav ul li a.nav_6:hover{
+	background-image: url(../images/nav6hover.png);
+}
+
+/***** フッター要素 *****/
+footer{
+	width: auto;
+	height: 50px;
+	padding-top: 10px;
+	text-align: center;
+	color: #FFF;
+	background-image: url(../images/nav_min1.png);
+	clear: both;
+}
+
+footer ul{
+	text-align: center;
+}
+
+footer ul li{
+	display: inline;
+	padding: 0 8px;
+	border-right: #FFF 1px solid;
+}
+
+footer ul li.last{
+	display: inline;
+	padding: 0 8px;
+	border-right: none;
+}
+
+footer ul li a{
+	color: #999;
+	text-decoration: none;
+}
+
+footer ul li a:hover{
+	color: #FFF;
+	text-decoration: underline;
+}

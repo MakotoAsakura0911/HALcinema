@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* 使用フォント追加 */
+@font-face {
+	font-family: "Talokofont";
+	src:url("fonts/Taloko.woff") format('woff'),
+	url("fonts/Taloko.ttf") format('truetype');
+}
+
+/* clearfix　回りこみ解除 */
+.cfx:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 左寄せ */
+.flL{
+	float: left;
+}
+/* 右寄せ */
+.flR{
+	float:right;
+}
+/* 文字左寄せ */
+.txL{
+	text-align: left;
+}
+/* 文字中央寄せ */
+.txC{
+	text-align: center;
+}
+/* 文字右寄せ */
+.txR{
+	text-align: right;
+}
+
+
+
+article{
+	width: 960px;
+	margin: 0 auto;
+}
+
+h2{
+	width: 660px;
+	font-size: 20px;
+	font-family: Talokofont;
+	border-bottom: 2px solid #000;
+	clear: both;
+}
+
+article div#left_Content{
+	float: left;
+}
+
+article div#right_Content{
+	float: right;
+}
+
+
+/***** メインスライド *****/
+section#topMain{
+	width: 940px;
+	height: 400px;
+	margin:20px 0;
+}
+
+div#slider{
+	width: 940px;
+	height: 340px;
+	position: relative;
+}
+
+div#slider a,
+div#slider a:hover{
+	text-decoration: none;
+}
+
+/* スライドナビ */
+div.slider_nav{
+	width: 350px;
+	height: 130px;
+	padding: 10px 25px;
+	position: absolute;
+	top:110px;
+	right: -90px;
+	text-align: center;
+	transform: rotate(90deg);
+	background-color: #000;
+}
+
+div.slider_nav div.nav{
+	width: 50px;
+}
+
+div.slider_nav div.nav img{
+	width: 100px;
+	height: 85px;
+	padding: 0 0 15px 0;
+	transform: rotate(-90deg);
+}
+
+/* スライドパネル */
+div.slider{
+	width: 800px;
+	height: 350px;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+}
+
+
+.back {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+.sample .contents {
+	display: block;
+	height: 350px;
+	margin: 0 10px;
+}
+.sample .nav {
+	width: 50px;
+	height: 100px;
+	display: block;
+	margin: 0 5px;
+}
+#sample div:nth-child(1), .contents01, .nav01 {
+	background: #E74C3C;
+}
+#sample div:nth-child(2), .contents02, .nav02 {
+	background: #3498DB;
+}
+#sample div:nth-child(3), .contents03, .nav03 {
+	background: #2ECC71;
+}
+#sample div:nth-child(4), .contents04, .nav04 {
+	background: #9B59B6;
+}
+#sample div:nth-child(5), .contents05 span, .nav05 span {
+	background: #34495e;
+}
+
+/***** slick.css上書き変更点 *****/
+.slick-prev{
+	left: 2px;
+}
+.slick-next{
+	right: 2px;
+}
+.slick-prev::before, .slick-next::before {
+	color: #fff;
+}
+
+/***** セクション１-ランキング- *****/
+section#section_1{
+	width: 660px;
+	height: 200px;
+	margin: 20px 0;
+}
+
+	section#section_1 #Ranking{
+		width: 550px;
+		margin: 30px 0 0 50px;
+	}
+
+	section#section_1 #Ranking .R_box{
+		width: 150px;
+		height: 180px;
+		margin-right: 20px;
+		border: 1px solid #000;
+		float: left;
+	}
+
+	section#section_1 #Ranking .R_box p{
+		text-align: center;
+	}
+
+		section#section_1 #Ranking .R_content{
+			width: 150px;
+			height: 150px;
+			border: 1px solid #aaa;
+		}
+
+			section#section_1 #Ranking .R_content img{
+				width: 150px;
+				height: 110px;
+			}
+
+			section#section_1 #Ranking .R_content p{
+				font-size: 1.5em;
+				text-align: center;
+			}
+
+/***** セクション２-新着情報- *****/
+section#section_2{
+	width: 660px;
+	height: auto;
+	margin: 20px 0;
+}
+
+	section#section_2 ul{
+		width: 500px;
+		margin:30px 0 0 50px;
+	}
+
+		section#section_2 ul li{
+			padding: 15px 0 5px 10px;
+			border-bottom: 1px dotted #000;
+		}
+
+		section#section_2 ul li span{
+			margin-right: 50px;
+			cursor: pointer;
+		}
+
+
+/***** サイドメニュー *****/
+aside{
+ width: 250px;
+}
+
+	aside ul{
+		margin-top: 30px;
+	}
+
+	aside ul li{
+		margin: 5px 0;
+	}

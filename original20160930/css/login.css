@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* 使用フォント追加 */
+@font-face {
+	font-family: "Talokofont";
+	src:url("fonts/Taloko.woff") format('woff'),
+	url("fonts/Taloko.ttf") format('truetype');
+}
+article{
+	width: 960px;
+	margin:50px auto;
+}
+section{
+    width: 660px;
+    margin: 0 auto;
+}
+h2{
+	width: 660px;
+	font-size: 20px;
+	font-family: Talokofont;
+	border-bottom: 2px solid #000;
+	clear: both;
+    margin-bottom: 30px;
+}
+.content{
+    width: 500px;
+    padding: 15px 0;
+    margin-left: 80px;
+}
+
+
+l	#form_main{
+		width: 600px;
+		height: auto;
+		margin:20px auto;
+		padding: 15px;
+	}
+
+		.form_box{
+			margin-bottom: 40px;
+		}
+
+			.form_box h3.form_h3{
+				padding: 18px 20px;
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 1.2;
+				color: #fff;
+				background-color: #424242;
+			}
+
+			.form_box p.form_item{
+				margin-top: 20px;
+				font-size: 15px;
+			}
+
+				.form_box [type=text]{
+					width: 45%;
+					margin-top: 5px;
+					padding: 10px;
+					font-size: 15px;
+					border: 1px solid #bdbdbd;
+					border-radius: 4px;
+					background-color: #fff;
+				}
+
+				.content [type=text]#TEL,
+				.content [type=password]#pass,
+				.content [type=text]#txt{
+					width: 95%;
+					margin-top: 5px;
+					padding: 10px;
+					font-size: 15px;
+					border: 1px solid #bdbdbd;
+					border-radius: 4px;
+					background-color: #fff;
+				}
+/*** submitボタン ***/
+	#submit_box{
+		width: 600px;
+		height: 50px;
+		padding: 20px;
+	}
+
+		#submit_box #btn{
+			width: 450px;
+			padding: 10px 0;
+			margin: 0 auto;
+			font-size: 18px;
+			font-weight: 700;
+			color: #fff;
+			background-color: #b71c1c;
+			border: 1px solid #000;
+			border-radius: 5px;
+			border-color: transparent;
+			transition: all 0.5s;
+		}
+
+		#submit_box #btn:hover{
+			color: #b71c1c;
+			background-color: #fff;
+			border: 1px solid #7C0101;
+			border-radius: 5px;
+
+		}
+
+.sinki{
+    text-align: center;
+    padding: 10px;
+}

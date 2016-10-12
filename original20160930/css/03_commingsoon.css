@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+/* clearfix　回りこみ解除 */
+.cfx:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 左寄せ */
+.flL{
+	float: left;
+}
+/* 右寄せ */
+.flR{
+	float:right;
+}
+/* 文字左寄せ */
+.txL{
+	text-align: left;
+}
+/* 文字中央寄せ */
+.txC{
+	text-align: center;
+}
+/* 文字右寄せ */
+.txR{
+	text-align: right;
+}
+
+
+
+article{
+	width: 960px;
+	margin: 0 auto;
+}
+
+h2{
+	width: 660px;
+	font-size: 2.5em;
+	border-bottom: 2px solid #000;
+	clear: both;
+}
+
+article div#left_Content{
+	margin-top: 50px;
+	float: left;
+}
+
+article div#right_Content{
+	margin-top: 50px;
+	float: right;
+}
+
+
+/***** セクション１-上映中作品- *****/
+section#j_sakuhin{
+	width: 660px;
+	height: auto;
+	margin: 20px 0;
+}
+
+	section#j_sakuhin .box{
+		width: 650px;
+		height: 150px;
+		margin: 30px 0;
+		box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.4);
+		background-color: #fff;
+	}
+
+		section#j_sakuhin .box p.imgbox{
+			width: 160px;
+			height: 150px;
+			border-right: 1px solid #aaa;
+			float: left;
+		}
+
+		section#j_sakuhin .box .box_text{
+			padding: 12px;
+			position: relative;
+			overflow: hidden;
+		}
+
+		section#j_sakuhin .box .box_text .box_title{
+			margin: -12px -12px 15px;
+			padding: 15px;
+		}
+
+			section#j_sakuhin .box .box_text .box_title h3{
+				display: inline;
+				font-size: 15px;
+			}
+
+				section#j_sakuhin .box .box_text .box_title h3 a{
+					text-decoration: none;
+					color: #000;
+				}
+
+			section#j_sakuhin .box .box_text table tr{
+
+			}
+
+
+/***** サイドメニュー *****/
+aside{
+ width: 250px;
+}
+
+	aside ul{
+		margin-top: 30px;
+	}
+
+	aside ul li{
+		margin: 5px 0;
+	}

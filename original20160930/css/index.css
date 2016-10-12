@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/* clearfix　回りこみ解除 */
+.cfx:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/* 左寄せ */
+.flL{
+	float: left;
+}
+/* 右寄せ */
+.flR{
+	float:right;
+}
+/* 文字左寄せ */
+.txL{
+	text-align: left;
+}
+/* 文字中央寄せ */
+.txC{
+	text-align: center;
+}
+/* 文字右寄せ */
+.txR{
+	text-align: right;
+}
+
+
+
+article{
+	width: 960px;
+	margin: 0 auto;
+}
+
+h2{
+	width: 660px;
+	font-size: 2.5em;
+	border-bottom: 2px solid #000;
+	clear: both;
+}
+
+a{
+	font-family: "RiiT_Ffont";
+}
+
+article div#left_Content{
+	float: left;
+}
+
+article div#right_Content{
+	float: right;
+}
+
+
+
+/***** メインスライド *****/
+section#topMain{
+	width: 940px;
+	height: 400px;
+	margin:20px 0;
+}
+
+div#slider{
+	width: 940px;
+	height: 340px;
+	position: relative;
+}
+
+	div#slider a,
+	div#slider a:hover{
+		text-decoration: none;
+	}
+
+	div#slider img#Yajirusi{
+		position: absolute;
+		top: 165px;
+		right: 120px;
+	}
+
+.slick-center img {
+	border: 4px solid #9a0000;
+
+}
+
+
+/* スライドナビ */
+div.slider_nav{
+	width: 350px;
+	height: 160px;
+	padding: 25px;
+	position: absolute;
+	top:95px;
+	right: -115px;
+	text-align: center;
+	transform: rotate(90deg);
+	background-color: #000;
+}
+
+div.slider_nav div.nav{
+	width: 50px;
+	position: relative;
+}
+
+div.slider_nav div.nav img{
+	width: 100px;
+	height: 43px;
+	position: absolute;
+	top:29px;
+	left: -28px;
+	transform: rotate(-90deg);
+}
+
+
+/* スライドパネル */
+div.slider{
+	width: 800px;
+	height: 350px;
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: 0;
+}
+
+
+.back {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+
+.sample .contents {
+	display: block;
+	height: 350px;
+	margin: 0 10px;
+}
+.sample .nav {
+	width: 43px;
+	height: 110px;
+	display: block;
+	margin: 0 5px;
+}
+
+
+
+
+/***** slick.css添付上書き変更点 *****/
+.slick-prev{
+	left: 2px;
+}
+.slick-next{
+	right: 2px;
+}
+.slick-prev::before, .slick-next::before {
+	color: #fff;
+}
+
+
+
+/***** セクション１-ランキング- *****/
+section#section_1{
+	width: 660px;
+	height: auto;
+	margin: 20px 0;
+}
+
+	section#section_1 #Ranking{
+		width: 600px;
+		margin: 30px 0 30px 50px;
+		position: relative;
+	}
+
+	section#section_1 #Ranking:after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+		section#section_1 #Ranking a.itiran{
+			font-size: 1.5em;
+			font-family: "RiiT_Ffont";
+			text-decoration: none;
+			position: absolute;
+			bottom: 0;
+			color: #000;
+		}
+
+		section#section_1 #Ranking a.itiran:hover{
+			opacity: 0.5;
+			text-decoration: underline;
+		}
+
+		section#section_1 #Ranking .R_box{
+			width: 150px;
+			height: 200px;
+			margin-right: 20px;
+			border: 1px solid #000;
+			float: left;
+		}
+
+			section#section_1 #Ranking .R_box p{
+				text-align: center;
+			}
+
+		section#section_1 #Ranking .R_content{
+			width: 150px;
+			height: 135px;
+			border: 1px solid #aaa;
+		}
+
+			section#section_1 #Ranking .R_content p{
+				font-size: 1.5em;
+				text-align: center;
+			}
+
+				section#section_1 #Ranking .R_content p img{
+					width: 150px;
+					height: 110px;
+				}
+
+
+
+/***** セクション２-新着情報- *****/
+section#section_2{
+	width: 660px;
+	height: auto;
+	margin: 20px 0;
+}
+
+	section#section_2 ul{
+		margin:30px 0 0 50px;
+	}
+
+		section#section_2 ul li{
+			width: 500px;
+			padding: 10px !important;
+			border-bottom: 2px dotted #666;
+
+		}
+
+
+			section#section_2 ul li span.day{
+				cursor: pointer;
+				color: #000;
+			}
+
+			section#section_2 ul li span.day:hover {
+				opacity: 0.7;
+			}
+
+			section#section_2 ul li p.textArea {
+				display: none;
+				padding: 10px 10px 30px 50px !important;
+				color: #000;
+			}
+
+
+.newTitle{
+	margin-left: 50px;
+}
+
+
+
+/***** サイドメニュー *****/
+aside{
+ width: 250px;
+}
+
+	aside ul{
+		margin-top: 30px;
+	}
+
+	aside ul li{
+		margin: 5px 0;
+	}

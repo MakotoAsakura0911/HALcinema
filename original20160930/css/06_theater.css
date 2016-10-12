@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* 使用フォント追加 */
+@font-face {
+	font-family: "RiiT_Ffont";
+	src:url("fonts/RiiT_F.woff") format('woff');
+}
+article{
+	width: 960px;
+	margin:50px auto;
+}
+section .content{
+ width: 650px;
+ margin-bottom: 20px;
+ padding: 30px 0 15px 10px;
+ background-color: #f0f0f0;
+    
+}
+.theater{
+	width: 370px;
+	display: block;
+	margin: 0 auto;
+}
+
+.theater_detail{
+	width: 600px;
+	font-size: 13px;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+h2{
+	width: 660px;
+	font-size: 2.5em;
+	font-family: RiiT_Ffont;
+	border-bottom: 2px solid #000;
+	clear: both;
+    margin-bottom: 30px;
+}
+.map_area{
+ width: 660px;
+ height: 400px;
+ background-image: url(../images/insidemap.gif);
+}
+.map_area ul{
+ width: 660px;
+ margin: 0 auto;
+ position: relative;
+}
+.map_area ul li{
+ text-align: center;
+ position: absolute;
+}
+.map_area ul li a{
+ text-decoration: none;
+}
+.s01{
+ top: 290px;
+ right: 115px;
+}
+.s02{
+ top: 290px;
+ right: 275px;
+}
+.s03{
+ top:125px;
+ right: 360px;
+}
+.s04{
+ top: 290px;
+ right: 360px;
+}
+.s05{
+ top:125px;
+ left: 175px;
+}
+.s06{
+ top: 290px;
+ left: 175px;
+}
+.s07{
+ top:125px;
+ left: 100px;
+}
+.s08{
+ top: 290px;
+ left: 100px;
+}
+.s09{
+ top:125px;
+ left: 25px;
+}
+.s10{
+ top: 290px;
+ left: 25px;
+}
+section img{
+ margin-left: 10px;
+}
+table{
+ width: 640px;
+}
+tr{
+ border-bottom: 1px solid #000;
+}
+tr th{
+ padding-bottom: 10px;
+}
+td{
+ text-align: center;
+ padding: 10px;
+}
+
+
+/***** サイドメニュー *****/
+section#side{
+ width: 250px;
+}
+
+	aside ul{
+		margin-top: 30px;
+	}
+
+	aside ul li{
+		margin: 5px 0;
+	}
